@@ -397,7 +397,7 @@ if (isset($_GET['delete_id'])) {
                         <select id="roleFilter" onchange="loadMembers()" class="px-4 py-3 bg-white/80 backdrop-blur border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-purple-500/20 shadow-sm text-gray-600">
                             <option value="">ทุกสิทธิ์</option>
                             <option value="admin">Admin</option>
-                            <option value="member">Member</option>
+                            <option value="user">Member</option>
                         </select>
                     </div>
                 </div>
@@ -460,7 +460,7 @@ if (isset($_GET['delete_id'])) {
                         <label class="block text-sm font-semibold text-gray-700 mb-2">สิทธิ์</label>
                         <select name="role" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-purple-500/20 focus:border-purple-500 transition-all">
                             <option value="">เลือกสิทธิ์</option>
-                            <option value="member">Member</option>
+                            <option value="user">Member</option>
                             <option value="admin">Admin</option>
                         </select>
                     </div>
@@ -525,7 +525,7 @@ if (isset($_GET['delete_id'])) {
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-2">สิทธิ์</label>
                         <select name="role" id="editRole" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-purple-500/20">
-                            <option value="member">Member</option>
+                            <option value="user">Member</option>
                             <option value="admin">Admin</option>
                         </select>
                     </div>
