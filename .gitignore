@@ -1,2 +1,40 @@
-# อนุญาตให้เอาไฟล์ทั้งหมดขึ้น GitHub
-# (เคลียร์กฎการบล็อกไฟล์ทิ้งทั้งหมดแล้ว)
+# Dependencies
+/vendor/
+/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE & Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+*.cache
+
+# Uploads (keep folder structure)
+Uploads/*
+!Uploads/.gitkeep
+!Uploads/profiles/
+Uploads/profiles/*
+!Uploads/profiles/.gitkeep
+
+# Docker override (local settings)
+docker-compose.override.yml
+
+# Compiled files
+*.phar

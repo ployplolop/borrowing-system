@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 // การตั้งค่าสำหรับเชื่อมต่อฐานข้อมูลใน Docker
 $host = 'db'; // ใช้ 'db' ตามชื่อ service ของฐานข้อมูลใน docker-compose.yml
@@ -15,18 +14,4 @@ try {
     // หากเชื่อมต่อไม่สำเร็จ ให้แสดงข้อความแจ้งเตือน
     die("Connection failed: " . $e->getMessage());
 }
-=======
-<?php
-$host = 'localhost'; 
-$dbname = 'equipment_borrowing';
-$username = 'root';
-$password = '';
-
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Connection failed: " . $e->getMessage());
-}
->>>>>>> ecb252f2b7e08ec439c774aa96e416c78811174b
 ?>
