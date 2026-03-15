@@ -1,4 +1,4 @@
-# Dependencies
+﻿# Dependencies
 /vendor/
 /node_modules/
 
@@ -35,6 +35,7 @@ Uploads/profiles/*
 
 # Docker override (local settings)
 docker-compose.override.yml
+db_data/
 
 # Compiled files
 *.phar
